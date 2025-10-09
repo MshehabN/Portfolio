@@ -46,7 +46,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I'm Mohammed, a programmer based in Ottawa.
+            Mohammed Shehab — student and creator.
           </p>
 
           <a href="#about">
