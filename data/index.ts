@@ -1,7 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -209,11 +208,6 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link: "https://twitter.com",
-  },
-  {
-    id: 3,
     img: "/link.svg",
     link: "https://linkedin.com/in/mohammed-shehab2004900",
   },
