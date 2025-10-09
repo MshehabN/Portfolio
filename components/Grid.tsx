@@ -16,6 +16,9 @@ const Grid = () => {
             imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}
             spareImg={item.spareImg}
+            hasButton={item.hasButton}
+            buttonText={item.buttonText}
+            buttonLink={item.buttonLink}
           />
         ))}
       </BentoGrid>

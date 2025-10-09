@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import { FaLocationArrow } from "react-icons/fa6";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -42,6 +43,9 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  hasButton,
+  buttonText,
+  buttonLink,
 }: {
   className?: string;
   id: number;
@@ -51,6 +55,9 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  hasButton?: boolean;
+  buttonText?: string;
+  buttonLink?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
@@ -177,6 +184,18 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+            </div>
+          )}
+          {hasButton && (
+            <div className="mt-5 relative">
+              <a href={buttonLink} target="_blank" rel="noopener noreferrer">
+                <MagicButton
+                  title={buttonText || "View Resume"}
+                  icon={<FaLocationArrow />}
+                  position="right"
+                  otherClasses="!bg-[#161A31]"
+                />
+              </a>
             </div>
           )}
         </div>
