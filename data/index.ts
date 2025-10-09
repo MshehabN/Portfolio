@@ -7,7 +7,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I'm passionate about learning and building innovative solutions",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -28,7 +28,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "HTML, CSS, JavaScript, Python, Java, MySQL, Lua, PostgreSQL, COBOL",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -51,8 +51,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Always learning new technologies and frameworks",
+    description: "Continuous Growth",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -75,7 +75,7 @@ export const projects = [
   {
     id: 1,
     title: "BullBearAI - Stock Prediction App",
-    des: "Machine learning application to forecast stock price movements using historical financial datasets with Scikit-learn and Python.",
+    des: "ML application to forecast stock movements using Python and Scikit-learn.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://github.com/MshehabN",
@@ -83,7 +83,7 @@ export const projects = [
   {
     id: 2,
     title: "LMS Admin Mock-Up System",
-    des: "Built and managed a functional Learning Management System demo with user role management and course tracking.",
+    des: "Learning Management System with user roles and course tracking.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/MshehabN",
@@ -91,7 +91,7 @@ export const projects = [
   {
     id: 3,
     title: "Help Desk Ticketing Simulator",
-    des: "Developed a mock ticketing system to simulate IT support operations with ticket prioritization and escalation logic.",
+    des: "Mock ticketing system for IT support operations and prioritization.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://github.com/MshehabN",
@@ -99,7 +99,7 @@ export const projects = [
   {
     id: 4,
     title: "Portfolio Website",
-    des: "Modern and responsive portfolio website built with Next.js, featuring interactive animations and clean design.",
+    des: "Modern responsive portfolio with Next.js and interactive animations.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/MshehabN",
