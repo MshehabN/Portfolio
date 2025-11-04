@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa6";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
 
 
@@ -63,6 +60,17 @@ export const BentoGridItem = ({
   const rightLists = ["Spring Boot", "Android Studio", "Pandas", "Matplotlib"];
 
   const [copied, setCopied] = useState(false);
+  const [Lottie, setLottie] = useState<any>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('react-lottie').then((module) => {
+        setLottie(() => module.default);
+      }).catch((err) => {
+        console.error('Failed to load Lottie:', err);
+      });
+    }
+  }, []);
 
   const defaultOptions = {
     loop: copied,
@@ -172,7 +180,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {typeof window !== 'undefined' && (
+                {Lottie && copied && (
                   <Lottie options={defaultOptions} height={200} width={400} />
                 )}
               </div>
