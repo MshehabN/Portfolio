@@ -107,6 +107,15 @@ export const projects = [
     link: "https://github.com/MshehabN/VisionGuard",
     buttonText: "Check Repo",
   },
+  {
+    id: 5,
+    title: "Inventory Management System",
+    des: "Inventory management system using JDBC and MySQL with role-based access control. Features product viewing, adding, updating, and deleting with admin/user roles.",
+    img: "/Inventory-Management.jpg",
+    iconLists: ["/Java.svg", "/MySQL.svg", "/Apache Maven.svg"],
+    link: "https://github.com/MshehabN/Inventory-Management-System",
+    buttonText: "Check Repo",
+  },
 ];
 
 export const testimonials = [
