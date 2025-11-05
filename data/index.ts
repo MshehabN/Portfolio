@@ -72,30 +72,40 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
-    id: 1,
-    title: "BullBearAI - Stock Prediction App",
-    des: "ML application to forecast stock movements using Python and Scikit-learn.",
-    img: "/ComingSoonMessage.jpg",
-    iconLists: ["/icons8-python.svg", "/scikit-learn.svg", "/Pandas.svg", "/icons8-matplotlib.svg"],
-    link: "https://github.com/MshehabN",
-  },
+  // {
+  //   id: 1,
+  //   title: "BullBearAI - Stock Prediction App",
+  //   des: "ML application to forecast stock movements using Python and Scikit-learn.",
+  //   img: "/ComingSoonMessage.jpg",
+  //   iconLists: ["/icons8-python.svg", "/scikit-learn.svg", "/Pandas.svg", "/icons8-matplotlib.svg"],
+  //   link: "https://github.com/MshehabN",
+  // }, // Commented out - can be restored later
   {
     id: 2,
     title: "Honeypot Network Security Monitor",
     des: "Security honeypot that emulates 6+ network services (SSH, HTTP, FTP, Telnet, MySQL, Redis) to detect and log unauthorized connection attempts with Flask dashboard.",
-    img: "/honeypot2.png",
+    img: "/honeypotIMG.jpg",
     iconLists: ["/icons8-python.svg", "/Flask.svg", "/HTML5.svg"],
     link: "https://github.com/MshehabN/Honeypot",
     buttonText: "Check Repo",
   },
   {
     id: 3,
-    title: "Help Desk Ticketing Simulator",
-    des: "Mock ticketing system for IT support operations and prioritization.",
-    img: "/p3.svg",
+    title: "Pong Game",
+    des: "Classic Pong game implementation with smooth gameplay mechanics and interactive controls.",
+    img: "/PongIMG.png",
     iconLists: ["/icons8-python.svg"],
-    link: "https://github.com/MshehabN",
+    link: "https://github.com/MshehabN/4-wayPong",
+    buttonText: "Check Repo",
+  },
+  {
+    id: 4,
+    title: "VisionGuard - Face Detection",
+    des: "Real-time face detection using OpenCV that detects faces from webcam feed with bounding boxes, confidence scores, and frame-by-frame analytics logging.",
+    img: "/FaceDetection.png",
+    iconLists: ["/icons8-python.svg"],
+    link: "https://github.com/MshehabN/VisionGuard",
+    buttonText: "Check Repo",
   },
 ];
 
