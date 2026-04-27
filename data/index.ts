@@ -92,6 +92,15 @@ export const projects = [
   },
   {
     id: 3,
+    title: "MeetUp — Android Meetup Manager",
+    des: "Java Android app for discovering and managing local meetups, with Firebase Authentication for secure sign-in and Room Database for offline-first event storage. Targets Android API 36 with a Material-themed UI.",
+    img: "/MeetUp.png",
+    iconLists: ["/Java.svg"],
+    link: "https://github.com/CodyEdition/MeetUp",
+    buttonText: "Check Repo",
+  },
+  {
+    id: 4,
     title: "Honeypot Network Security Monitor",
     des: "Security honeypot that emulates 6+ network services (SSH, HTTP, FTP, Telnet, MySQL, Redis) to detect and log unauthorized connection attempts with Flask dashboard.",
     img: "/honeypotIMG.jpg",
@@ -100,7 +109,7 @@ export const projects = [
     buttonText: "Check Repo",
   },
   {
-    id: 4,
+    id: 5,
     title: "Inventory Management System",
     des: "Role-based inventory platform built with Java, JDBC, and MySQL — admin-restricted CRUD with view-only permissions for regular users, supporting end-to-end inventory workflows.",
     img: "/Inventory-Management.jpg",
@@ -109,7 +118,7 @@ export const projects = [
     buttonText: "Check Repo",
   },
   {
-    id: 5,
+    id: 6,
     title: "VisionGuard — Face Detection",
     des: "Real-time face detection using OpenCV that detects faces from webcam feed with bounding boxes, confidence scores, and frame-by-frame analytics logging.",
     img: "/FaceDetection.png",
@@ -118,7 +127,7 @@ export const projects = [
     buttonText: "Check Repo",
   },
   {
-    id: 6,
+    id: 7,
     title: "4-Way Pong",
     des: "4-way Pong game built with Python and Pygame — 2-player gameplay where each player controls two paddles (top/left vs bottom/right) with a lives system.",
     img: "/PongIMG.png",

@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa6";
+import Lottie from "lottie-react";
 
 import { cn } from "@/lib/utils";
 
@@ -60,26 +61,6 @@ export const BentoGridItem = ({
   const rightLists = ["Spring Boot", "Android Studio", "Pandas", "Matplotlib"];
 
   const [copied, setCopied] = useState(false);
-  const [Lottie, setLottie] = useState<any>(null);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      import('react-lottie').then((module) => {
-        setLottie(() => module.default);
-      }).catch((err) => {
-        console.error('Failed to load Lottie:', err);
-      });
-    }
-  }, []);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
 
   const handleCopy = () => {
     const text = "moe2004900@gmail.com";
@@ -180,8 +161,14 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {Lottie && copied && (
-                  <Lottie options={defaultOptions} height={200} width={400} />
+                {copied && (
+                  <Lottie
+                    animationData={animationData}
+                    loop={copied}
+                    autoplay={copied}
+                    style={{ height: 200, width: 400 }}
+                    rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
+                  />
                 )}
               </div>
 
