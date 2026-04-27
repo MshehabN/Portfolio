@@ -32,17 +32,18 @@ const MeetUpSpotlight = () => {
 
         <div className="relative z-10 flex flex-col gap-3 sm:max-w-xl text-center sm:text-left">
           <span className="text-xs uppercase tracking-[0.2em] text-purple">
-            Featured build
+            Team build · Software Developer
           </span>
           <h2 className="font-bold text-2xl md:text-3xl">
             MeetUp{" "}
             <span className="text-purple">— Android Meetup Manager</span>
           </h2>
           <p className="text-sm md:text-base text-[#BEC1DD] leading-relaxed">
-            Java Android app for discovering and managing local meetups, with
-            Firebase Authentication for secure sign-in and Room Database for
-            offline-first event storage. Built against Android API 36 with a
-            Material-themed UI.
+            Built with the MeetUp team. An Android app for discovering and
+            organizing local meetups — featuring secure signup/login, city hub
+            selection, event creation, and RSVP management. Powered by Java,
+            Firebase Auth, and SQLite/Room, with input validation and offline
+            persistence built in.
           </p>
           <a
             href="https://github.com/CodyEdition/MeetUp"

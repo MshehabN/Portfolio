@@ -57,8 +57,8 @@ export const BentoGridItem = ({
   buttonText?: string;
   buttonLink?: string;
 }) => {
-  const leftLists = ["Android Studio", "Linux", "Debian", "ReactJS"];
-  const rightLists = ["Spring Boot", "Android Studio", "Pandas", "Matplotlib"];
+  const leftLists = ["Android Studio", "Linux", "Debian", "ReactJS", "Docker"];
+  const rightLists = ["Flask", "Spring Boot", "Android Studio", "Pandas", "Matplotlib"];
 
   const [copied, setCopied] = useState(false);
 
@@ -139,10 +139,8 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}

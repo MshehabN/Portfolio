@@ -28,7 +28,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "HTML, CSS, JavaScript, Python, Java, MySQL, Lua, PostgreSQL, COBOL",
+    description: "Java, Python, JavaScript, HTML, CSS, MySQL, PostgreSQL, Lua, COBOL",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 lg:row-span-3",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -77,6 +77,7 @@ export const projects = [
     title: "BullBearAI — Stock Prediction",
     des: "Machine learning app forecasting stock price movements from 5,000+ historical records, with preprocessing pipelines and 3 model variants improving validation accuracy from 64% to ~72%.",
     img: "/BullBearAI.png",
+    imgClassName: "object-contain",
     iconLists: ["/icons8-python.svg", "/Flask.svg", "/scikit-learn.svg", "/Pandas.svg"],
     link: "https://github.com/MshehabN/BullBearAI",
     buttonText: "Check Repo",
