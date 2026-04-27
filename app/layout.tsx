@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mohammed's Portfolio",
-  description: "Computer Programming Student Portfolio",
+  description: "Portfolio of Mohammed Shehab — Computer Programming Diploma, Algonquin College | BSc CIS Student, Athabasca University",
 };
 
 export default function RootLayout({
