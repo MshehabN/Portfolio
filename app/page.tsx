@@ -10,6 +10,7 @@ import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 // import Experience from "@/components/Experience"; // Commented out - can be restored later
+import MeetUpSpotlight from "@/components/MeetUpSpotlight";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -20,6 +21,7 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <MeetUpSpotlight />
         <RecentProjects />
         {/* <Experience /> */} {/* Commented out - can be restored later */}
         <Approach />
