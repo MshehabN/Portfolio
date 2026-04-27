@@ -17,6 +17,16 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-x-hidden mx-auto sm:px-10 px-5">
+      {/* Page-wide grid background */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-20 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]"
+      />
+      {/* Page-wide radial fade mask, matches the Hero's vignette */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-10 dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+      />
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
