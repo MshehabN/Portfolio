@@ -16,17 +16,15 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-x-hidden mx-auto px-5 sm:px-10 lg:px-16 xl:px-24 2xl:px-32">
-      {/* Page-wide grid background */}
+    <main className="relative flex justify-center items-center flex-col overflow-x-hidden mx-auto px-5 sm:px-10 lg:px-16 xl:px-24 2xl:px-32">
+      {/* Page-document grid background that scrolls with the page, visible at the top and bottom and fading out through the middle */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-20 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]"
-      />
-      {/* Page-wide radial fade mask, matches the Hero's vignette */}
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10 dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-      />
+        className="pointer-events-none absolute inset-0 -z-10 dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]"
+      >
+        {/* Vertical fade overlay: opaque black-100 in the middle, transparent at top and bottom, so the grid shows in/out as you scroll */}
+        <div className="absolute pointer-events-none inset-0 dark:bg-black-100 bg-white [mask-image:linear-gradient(to_bottom,transparent_0%,black_35%,black_65%,transparent_100%)]" />
+      </div>
       <div className="w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
