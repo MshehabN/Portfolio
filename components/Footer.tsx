@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 relative overflow-hidden" id="contact">
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading lg:max-w-[45vw] 2xl:max-w-[40rem]">
           Let&apos;s <span className="text-purple">connect</span> and explore
           opportunities together
         </h1>

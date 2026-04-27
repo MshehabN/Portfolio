@@ -22,7 +22,7 @@ const MeetUpSpotlight = () => {
                      bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
         />
 
-        <div className="relative shrink-0 w-32 sm:w-36 md:w-40 lg:w-44 -rotate-6 drop-shadow-2xl">
+        <div className="relative shrink-0 w-32 sm:w-36 md:w-40 lg:w-44 xl:w-52 2xl:w-60 -rotate-6 drop-shadow-2xl">
           <img
             src="/meetup-login.png"
             alt="MeetUp app login screen"

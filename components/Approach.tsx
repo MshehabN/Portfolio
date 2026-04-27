@@ -80,7 +80,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl "
+       dark:border-white/[0.2]  max-w-sm xl:max-w-md 2xl:max-w-lg w-full mx-auto p-4 relative lg:h-[35rem] 2xl:h-[40rem] rounded-3xl "
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
