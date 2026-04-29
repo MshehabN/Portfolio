@@ -23,9 +23,9 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] 2xl:max-w-[60rem] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100">
-            Computer Programming Diploma, Algonquin College
+            Pursuing BSc Computing & Information Systems · Athabasca University
             <br />
-            BSc Computing & Information Systems, Athabasca University
+            Computer Programming Diploma · Algonquin College
           </p>
 
           {/* Text animation */}

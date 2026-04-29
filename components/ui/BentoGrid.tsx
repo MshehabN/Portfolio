@@ -57,8 +57,8 @@ export const BentoGridItem = ({
   buttonText?: string;
   buttonLink?: string;
 }) => {
-  const leftLists = ["Android Studio", "Linux", "Debian", "ReactJS", "Docker"];
-  const rightLists = ["Flask", "Spring Boot", "Android Studio", "Pandas", "Matplotlib"];
+  const leftLists = ["Android Studio", "Linux", "Debian", "ReactJS", "Docker", "Git"];
+  const rightLists = ["Firebase", "Flask", "Spring Boot", "scikit-learn", "Pandas", "Matplotlib"];
 
   const [copied, setCopied] = useState(false);
 
