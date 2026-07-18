@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
-import LanguagesCodeBlock from "./LanguagesCodeBlock";
+import TechStackGrid from "./TechStackGrid";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -24,7 +24,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 2xl:gap-10 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 gap-4 lg:gap-8 2xl:gap-10 mx-auto",
         className
       )}
     >
@@ -58,9 +58,6 @@ export const BentoGridItem = ({
   buttonText?: string;
   buttonLink?: string;
 }) => {
-  const leftLists = ["Android Studio", "Linux", "Debian", "ReactJS", "Docker", "Git", "Oracle"];
-  const rightLists = ["Firebase", "Flask", "Spring Boot", "scikit-learn", "Pandas", "Matplotlib", "Room"];
-
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -110,40 +107,12 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
 
-        {/* Cascading framework pills: two columns of pills where the right
-            column is offset down by half a row pitch, so each right pill
-            sits between two left pills (brick / interlock pattern). */}
-        {id === 3 && (
-          <div className="absolute z-20 top-3 sm:top-4 lg:top-5 xl:top-6 2xl:top-8 right-2 sm:right-3 lg:right-4 xl:right-5 2xl:right-6 flex items-start gap-1 xl:gap-2 2xl:gap-3 w-fit">
-            <div className="flex flex-col gap-2 xl:gap-5 2xl:gap-8">
-              {leftLists.map((item) => (
-                <span
-                  key={item}
-                  className="py-1 px-2 text-[10px] xl:py-3 xl:px-3 xl:text-sm 2xl:py-4 2xl:px-3 2xl:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] whitespace-nowrap w-20 sm:w-24 xl:w-32 2xl:w-40"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col gap-2 xl:gap-5 2xl:gap-8 mt-[15px] xl:mt-[32px] 2xl:mt-[44px]">
-              {rightLists.map((item) => (
-                <span
-                  key={item}
-                  className="py-1 px-2 text-[10px] xl:py-3 xl:px-3 xl:text-sm 2xl:py-4 2xl:px-3 2xl:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] whitespace-nowrap w-20 sm:w-24 xl:w-32 2xl:w-40"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-
         <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col",
             id === 3
-              ? "px-3 py-5 sm:px-4 sm:py-6 lg:px-4 lg:py-8 xl:px-3 xl:py-9 2xl:px-6 2xl:py-10 z-30"
+              ? "p-4 sm:p-5 lg:p-6 2xl:p-8 z-30"
               : "px-5 p-5 lg:p-10"
           )}
         >
@@ -160,12 +129,9 @@ export const BentoGridItem = ({
 
           {id === 2 && <GridGlobe />}
 
-          {/* Tech stack: code block sits in flex flow below the title on the left.
-              The staircase pills are positioned absolutely on the card outer below
-              (so they hug the top-right edge of the widget, not below the title). */}
           {id === 3 && (
-            <div className="z-10 mt-3 sm:mt-4 lg:mt-5 w-fit">
-              <LanguagesCodeBlock />
+            <div className="z-10 mt-4 lg:mt-6 w-full min-w-0">
+              <TechStackGrid />
             </div>
           )}
           {id === 6 && (
@@ -179,7 +145,7 @@ export const BentoGridItem = ({
                     animationData={animationData}
                     loop={copied}
                     autoplay={copied}
-                    style={{ height: 200, width: 400 }}
+                    style={{ height: 200, width: "100%", maxWidth: 400 }}
                     rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
                   />
                 )}
